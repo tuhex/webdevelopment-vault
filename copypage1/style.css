@@ -43,7 +43,7 @@ header {
   margin-left: 50px;
 }
 
-right li:hover {
+.right li:hover {
   color: gray !important;
 }
 
@@ -68,12 +68,10 @@ right li:hover {
   color: gray;
 }
 
-#slogan::before {
-  content: "~ ";
-}
-
-#slogan::after {
-  content: " ~";
+@media screen and (max-width: 960px) {
+  .hide-on-tiny {
+    display: none !important;
+  }
 }
 
 section {
@@ -82,12 +80,20 @@ section {
   font-family: "Open Sans", sans-serif;
 }
 
-.main-content {
+.middle {
+  display: flex;
   min-height: 100%;
   color: black;
+  font-size: 16px;
   background-color: white;
   border-left: 8px solid #2e2e79;
   border-right: 8px solid #2e2e79;
+}
+@media screen and (max-width: 960px) {
+  .middle {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
 }
 
 #left-side,
@@ -111,6 +117,26 @@ section {
   margin: auto;
   text-align: center;
   color: #FFFFFF;
+}
+
+#sub-header {
+  color: #c0c95d;
+}
+
+#decorator-purple {
+  text-decoration-color: blue;
+  text-decoration: underline;
+}
+
+.breadcrumbs {
+  margin: auto;
+  margin-top: 50px;
+  width: auto;
+  float: right;
+}
+
+.main-content {
+  width: 75%;
 }
 
 /*# sourceMappingURL=style.css.map */
