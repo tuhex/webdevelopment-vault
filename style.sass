@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@500&family=Inter:wght@200&family=Open+Sans&family=Preahvihear&display=swap')
+
+
+$color_primary_dark: #2e2e79
+$color_primary_light: #59599c
+$color_text: #FFFFFF
+$family-header: "Preahvihear", sans-serif
+$family-article: "Open Sans", sans-serif
+
+body
+    margin: 0
+    padding: 0
+
+header
+    background-color: $color_primary_dark
+    width: 100%
+    overflow: hidden
+    font-family: $family-header
+    font-size: 15px
+
+.wrapper
+    display: flex
+    align-items: center
+    overflow: hidden
+
+.wrapper
+    li
+        display: inline
+        list-style-type: none
+
+.wrapper,
+#slogan 
+    margin-left: 5%
+    margin-right: 5%
+
+.navbar-left
+    float: left
+    color: white
+
+.navbar-right
+    margin: auto
+    margin-right: 5%
+
+.navbar-right
+    li
+        margin-left: 50px
+
+right
+    li
+        &:hover
+            color: gray !important
+
+.right
+    a
+        color: $color_text
+
+.right
+    a
+        &:hover
+            color: gray
+
+    
+
+.wrapper
+    a
+        cursor: pointer
+
+.navbar-right
+    a
+        &:hover
+            text-decoration: none
+
+#slogan
+    margin-top: -5px
+    color: gray
+
+#slogan
+    &::before
+        content: "~ "
+#slogan
+    &::after
+        content: " ~"
+
+section
+    display: grid !important
+    grid-template-columns: 12% auto 12% !important 
+    font-family: $family-article 
+
+.main-content
+    min-height: 100%
+    color: black
+    background-color: white
+    border-left: 8px solid $color_primary_dark
+    border-right: 8px solid $color_primary_dark
+
+#left-side,
+#right-side
+    content: ""
+    background: $color_primary_light
+
+
+.footer
+    display: flex
+    background-color: rgba($color_primary_light, .5)
+    width: 100%
+    height: 36px
+    align-items: center
+    bottom: 0
+    position: fixed
+    font-family: $family-article
+
+.footer
+    div
+        margin: auto
+        text-align: center
+        color: $color_text   
+
+
+    
